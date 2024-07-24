@@ -14,11 +14,13 @@ public class ContadorDeSelos {
 		System.out.println("Digite o preço");
 		item.setPreco(myObj.nextDouble());
 
-
 		System.out.println("Digite a quantidade");
 		quantidadeDeProduto = myObj.nextInt();
-		System.out.println(quantidadeDeProduto +" "+ item.getNome() + " - R$ " + item.getPreco());
 
+		double total = quantidadeDeProduto * item.getPreco();
+
+		System.out.println(quantidadeDeProduto + " " + item.getNome() + " - R$ " + item.getPreco());
+		System.out.println("Total: R$ " + total);
 		myObj.close();
 	}
 }
